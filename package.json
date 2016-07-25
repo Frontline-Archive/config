@@ -1,0 +1,46 @@
+{
+  "name": "@sinet/config",
+  "version": "1.0.0",
+  "description": "Config handler backed by Consul.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp test",
+    "eslint": "eslint",
+    "gulp": "gulp",
+    "jscs": "jscs",
+    "nsp": "nsp",
+    "lint": "npm run eslint -- ./ && npm run jscs -- --esnext ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinet/config.git"
+  },
+  "author": "School Improvement Network",
+  "license": "(c) School Improvement Network",
+  "bugs": {
+    "url": "https://github.com/sinet/config/issues"
+  },
+  "homepage": "https://github.com/sinet/config#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "consul": "^0.25.0",
+    "dotty": "0.0.2",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "@sinet/coding-conventions": "^2.1.1",
+    "@sinet/coverage-enforcement": "^1.2.0",
+    "del": "^2.0.2",
+    "eslint": "^1.10.3",
+    "gulp": "^3.9.0",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-mocha": "^2.1.3",
+    "jscs": "^2.11.0",
+    "mocha": "^2.3.2",
+    "nock": "^8.0.0",
+    "nsp": "^2.6.1",
+    "rewire": "^2.3.4",
+    "should": "^7.1.0",
+    "sinon": "^1.16.1"
+  }
+}

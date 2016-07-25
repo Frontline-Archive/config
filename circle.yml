@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: 5.6.0
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+
+    # Detect errors and potential problems
+    - npm run eslint -- ./
+    - npm run jscs -- --esnext ./
+
+    # Check packages with known and public vulnerable dependencies
+    - npm run nsp -- check --warn-only
+
+    # Run available tests
+    - npm test
